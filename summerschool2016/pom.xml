@@ -29,6 +29,18 @@
   		<groupId>org.apache.storm</groupId>
   		<artifactId>storm-kafka</artifactId>
   		<version>1.0.1</version>
+  		<exclusions>
+  			<exclusion>
+  				<groupId>org.apache.kafka</groupId>
+  				<artifactId>kafka-clients</artifactId>
+  			</exclusion>
+  		</exclusions>
+  	</dependency>
+
+  	<dependency>
+  		<groupId>org.apache.kafka</groupId>
+  		<artifactId>kafka-clients</artifactId>
+  		<version>0.8.2.1</version>
   	</dependency>
   </dependencies>
 </project>
